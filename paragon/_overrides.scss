@@ -380,6 +380,22 @@ a.inline-link {
 }
 
 //ga overwrite
+.site-header-desktop, .studio-header, .learning-header {
+  .btn-outline-primary  {
+    border-color: transparent!important;
+  }
+  .nav-link {
+    &.active {
+      background-color: $white!important;
+      color: inherit!important;
+    }
+    &:hover {
+      background-color: $white!important;
+      color: $primary!important;
+    }
+  }
+}
+
 .bg-primary {
   background-color: $primary-700!important;
   .btn-inverse-outline-primary {
@@ -387,10 +403,11 @@ a.inline-link {
   }
 }
 
-.btn-outline-primary:not(:disabled):not(.disabled) {
+.btn-outline-primary:not(:disabled):not(.disabled):not(.dropdown-toggle) {
   color: inherit!important;
   border-color: inherit!important;
   &:hover, &:focus {
+    text-decoration: none!important;
     border-color: $primary!important;
     background-color: $primary-100!important;
     color: $primary!important;
@@ -411,6 +428,9 @@ a.inline-link {
   &:hover {
     color: $white!important;
   }
+  &:focus {
+    color: $primary!important;
+  }
 }
 
 .btn-icon-primary:hover {
@@ -430,22 +450,6 @@ a.inline-link {
     background-color: $primary-100;
     color: $primary;
     border-color: $primary;
-  }
-}
-
-.site-header-desktop, .studio-header, .learning-header {
-  .btn-outline-primary  {
-    border-color: transparent!important;
-  }
-  .nav-link {
-    &.active {
-      background-color: $white!important;
-      color: inherit!important;
-    }
-    &:hover {
-      background-color: $white!important;
-      color: $primary!important;
-    }
   }
 }
 
