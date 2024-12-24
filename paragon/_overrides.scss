@@ -100,7 +100,7 @@
 
 .btn-primary:not(:disabled):not(.disabled) {
   &:hover, &:active, &.hover, &.active {
-    background: $primary-300;
+    background: $primary-400;
     border-color: transparent;
     color: $white;
   }
@@ -380,49 +380,75 @@ a.inline-link {
 }
 
 //ga overwrite
-.site-header-desktop, .studio-header {
-  .btn-outline-primary  {
-    border: none!important;
-  }
-  .nav-link {
-    &.active {
-      background-color: white!important;
-      color: inherit!important;
-    }
-    &:hover {
-      background-color: white!important;
-      color: var(--primary)!important;
-    }
-  }
-}
-
-.instructor-toolbar {
-  // >.bg-primary {
-  //   background-color: var($primary-600)!important;
-  // }
+.bg-primary {
+  background-color: $primary-700;
   .btn-inverse-outline-primary {
-    border-color: white!important;
-  }
-  .dropdown-item.active {
-    background-color: var($primary-600)!important;
+    border-color: $white!important;
   }
 }
 
 .btn-outline-primary {
   color: inherit!important;
   border-color: inherit!important;
-  &:hover {
-    background-color: white!important;
-    color: var(--primary)!important;
+  &:hover, &:focus {
+    border-color: $primary!important;
+    background-color: $primary-100!important;
+    color: $primary!important;
   }
 }
 
 .donut-hole.complete-stroke, .donut-ring.complete-stroke, .donut-segment.complete-stroke {
-  stroke: var(--primary)!important;
+  stroke: $primary!important;
 }
 
 .btn-link, .pgn__chip .pgn__chip__label,
 .pgn__chip.pgn__chip-light .pgn__chip__icon-before.pgn__icon,
 .btn-icon.btn-icon-primary {
+  color: inherit!important;
+}
+
+.pgn__chip.pgn__chip-light {
+  &:hover {
+    color: $white!important;
+  }
+}
+
+.btn-icon-primary:hover {
+  color: $primary!important;
+}
+
+.btn-link:hover {
+  color: $info;
+}
+
+#home-change-language-button {
+  border: none!important;
+}
+
+.unit-navigation {
+  .previous-button:hover {
+    background-color: $primary-100;
+    color: $primary;
+    border-color: $primary;
+  }
+}
+
+.site-header-desktop, .studio-header, .learning-header {
+  .btn-outline-primary  {
+    border-color: transparent!important;
+  }
+  .nav-link {
+    &.active {
+      background-color: $white!important;
+      color: inherit!important;
+    }
+    &:hover {
+      background-color: $white!important;
+      color: $primary!important;
+    }
+  }
+}
+
+.text-primary-500 {
   color: inherit!important;
 }
