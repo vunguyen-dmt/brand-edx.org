@@ -378,3 +378,42 @@ a.inline-link {
     color: $gray-900;
   }
 }
+
+//ga overwrite
+.site-header-desktop {
+  .nav-link {
+    &.active {
+      background-color: white!important;
+      color: inherit!important;
+    }
+    &:hover {
+      background-color: white!important;
+      color: var(--primary)!important;
+    }
+  }
+}
+
+.instructor-toolbar {
+  >.bg-primary {
+    background-color: var($primary-600)!important;
+  }
+  .btn-inverse-outline-primary {
+    border-color: white!important;
+  }
+  .dropdown-item.active {
+    background-color: var($primary-600)!important;
+  }
+}
+
+.btn-outline-primary {
+  color: inherit!important;
+  border-color: inherit!important;
+  &:hover {
+    background-color: white!important;
+    color: var(--primary)!important;
+  }
+}
+
+.donut-hole.complete-stroke, .donut-ring.complete-stroke, .donut-segment.complete-stroke {
+  stroke: var(--primary)!important;
+}
