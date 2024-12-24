@@ -382,7 +382,14 @@ a.inline-link {
 //ga overwrite
 .site-header-desktop, .studio-header, .learning-header {
   .btn-outline-primary  {
+    color: inherit!important;
     border-color: transparent!important;
+    &:hover, &:focus {
+      text-decoration: none!important;
+      border-color: $primary!important;
+      background-color: $primary-100!important;
+      color: $primary!important;
+    }
   }
   .nav-link {
     &.active {
@@ -403,7 +410,7 @@ a.inline-link {
   }
 }
 
-.btn-outline-primary:not(:disabled):not(.disabled):not(.dropdown-toggle) {
+.btn-outline-primary:not(:disabled):not(.disabled):not(.dropdown-toggle):not(.menu-trigger) {
   color: inherit!important;
   border-color: inherit!important;
   &:hover, &:focus {
@@ -433,8 +440,14 @@ a.inline-link {
   }
 }
 
-.btn-icon-primary:hover {
-  color: $white!important;
+.btn-icon-primary {
+  color: inherit!important;
+  &:hover {
+    color: $white!important;
+  }
+  &:focus {
+    color: $primary!important;
+  }
 }
 
 .btn-link:hover {
