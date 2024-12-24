@@ -380,7 +380,10 @@ a.inline-link {
 }
 
 //ga overwrite
-.site-header-desktop {
+.site-header-desktop, .studio-header {
+  .btn-outline-primary  {
+    border: none!important;
+  }
   .nav-link {
     &.active {
       background-color: white!important;
@@ -394,9 +397,9 @@ a.inline-link {
 }
 
 .instructor-toolbar {
-  >.bg-primary {
-    background-color: var($primary-600)!important;
-  }
+  // >.bg-primary {
+  //   background-color: var($primary-600)!important;
+  // }
   .btn-inverse-outline-primary {
     border-color: white!important;
   }
@@ -416,4 +419,10 @@ a.inline-link {
 
 .donut-hole.complete-stroke, .donut-ring.complete-stroke, .donut-segment.complete-stroke {
   stroke: var(--primary)!important;
+}
+
+.btn-link, .pgn__chip .pgn__chip__label,
+.pgn__chip.pgn__chip-light .pgn__chip__icon-before.pgn__icon,
+.btn-icon.btn-icon-primary {
+  color: inherit!important;
 }

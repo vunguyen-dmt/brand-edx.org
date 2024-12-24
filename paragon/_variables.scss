@@ -25,7 +25,7 @@ $gray-800: #333333 !default;
 $gray-900: #212529 !default;
 $black:    #000 !default;
 
-$blue:    #00688D !default;
+$blue:    #2196f3 !default;
 // $indigo:  #6610f2 !default;
 // $purple:  #6f42c1 !default;
 // $pink:    #d63384 !default;
@@ -59,14 +59,14 @@ $green:   #0D7D4D !default;
 //   $colors
 // );
 
-$primary: #0063cd !default; // elm
-$brand: #f61b17 !default;
+$primary: #3366cc !default; // elm
+$brand: #cc3333 !default;
 $success: $green !default;
 $info: $blue !default;
 $danger: $red !default;
 $warning: $yellow !default;
 $light: #E1DDDB !default; // limestone
-$dark: #00262B !default; // elm
+$dark: #1a1a1a !default; // elm
 $accent-a: #03C7E8 !default; // isotope blue
 $accent-b: #F0CC00 !default; // oxide yellow
 
@@ -92,14 +92,14 @@ $theme-colors: map-merge(
 // Color system
 
 
-$primary-300: #4c8df3	;
-$primary-400: #007dce	;
+$primary-300: #99b3e6	;
+$primary-400: #6699dd	;
 $primary-500: $primary;
-$primary-600: #0051a6	;
-$primary-700: #003e80	;
+$primary-600: #264ea3	;
+$primary-700: #1a387a	;
 
 $brand-500: $brand;
-$brand-700: #c21412;
+$brand-700: #7a1f1f;
 
 $light-200: #FBFAF9;
 $light-300: #F2F0EF;
@@ -107,19 +107,19 @@ $light-400: #EAE6E5;
 $light-500: $light;
 $light-700: #D7D3D1;
 
-$dark-200: #475B65;
-$dark-300: #2D494E;
-$dark-400: #0E3639;
+$dark-200: #666666;
+$dark-300: #404040;
+$dark-400: #262626;
 $dark-500: $dark;
-$dark-600: #002326;
-$dark-700: #002121;
+$dark-600: #121212;
+$dark-700: #0b0b0b;
 
-$info-100: #EFF8FA;
-$info-200: #9CD2E6;
-$info-300: #1C8DBE;
+$info-100: #bbdefb;
+$info-200: #90caf9;
+$info-300: #64b5f6;
 $info-500: $info;
-$info-700: #004972;
-$info-900: #002F4A;
+$info-700: #1976d2;
+$info-900: #0d47a1;
 
 $success-100: #F2FAF7;
 $success-200: #BBE6D7;
