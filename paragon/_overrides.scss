@@ -381,13 +381,13 @@ a.inline-link {
 
 //ga overwrite
 .bg-primary {
-  background-color: $primary-700;
+  background-color: $primary-700!important;
   .btn-inverse-outline-primary {
     border-color: $white!important;
   }
 }
 
-.btn-outline-primary {
+.btn-outline-primary:not(:disabled):not(.disabled) {
   color: inherit!important;
   border-color: inherit!important;
   &:hover, &:focus {
@@ -401,7 +401,7 @@ a.inline-link {
   stroke: $primary!important;
 }
 
-.btn-link, .pgn__chip .pgn__chip__label,
+.pgn__chip .pgn__chip__label,
 .pgn__chip.pgn__chip-light .pgn__chip__icon-before.pgn__icon,
 .btn-icon.btn-icon-primary {
   color: inherit!important;
@@ -414,7 +414,7 @@ a.inline-link {
 }
 
 .btn-icon-primary:hover {
-  color: $primary!important;
+  color: $white!important;
 }
 
 .btn-link:hover {
@@ -426,7 +426,7 @@ a.inline-link {
 }
 
 .unit-navigation {
-  .previous-button:hover {
+  .previous-button:not(:disabled):not(.disabled):hover {
     background-color: $primary-100;
     color: $primary;
     border-color: $primary;
