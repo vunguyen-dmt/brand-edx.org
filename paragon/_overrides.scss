@@ -412,7 +412,7 @@ a.inline-link {
 
 .btn-outline-primary:not(:disabled):not(.disabled):not(.dropdown-toggle):not(.menu-trigger) {
   color: inherit!important;
-  border-color: inherit!important;
+  border-color: $gray-200!important;
   &:hover, &:focus {
     text-decoration: none!important;
     border-color: $primary!important;
