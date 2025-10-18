@@ -59,7 +59,7 @@ $green:   #0D7D4D !default;
 //   $colors
 // );
 
-$primary: #3366cc !default; // elm
+$primary: #001f63 !default;
 $brand: #cc3333 !default;
 $success: $green !default;
 $info: $blue !default;
@@ -91,12 +91,12 @@ $theme-colors: map-merge(
 
 // Color system
 
-$primary-100: #e6f0fb;
-$primary-300: #99b3e6;
-$primary-400: #6699dd;
+$primary-100: #cce0ff;
+$primary-300: #6699ff;
+$primary-400: #3366cc;
 $primary-500: $primary;
-$primary-600: #264ea3;
-$primary-700: #1a387a;
+$primary-600: #001f63;
+$primary-700: #001f63;
 
 $brand-500: $brand;
 $brand-700: #7a1f1f;
